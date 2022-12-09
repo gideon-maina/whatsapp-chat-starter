@@ -1,0 +1,18 @@
+<div class="content">
+    <h1 class="header">Start a WhatsApp</h1>
+    <p class="info"> With a phone number not in your contacts </p>
+    <p class="info"> The app opens WhatsApp app if on phone or the </p>
+    <p class="info">WhatsApp web tab if on a computer to text the entered number </p>
+    <select class="country-select" name="country" id="country-select" [formControl]="country">
+        <option value="">--Please choose the country--</option>
+        <option *ngFor="let country of countries" [selected]="country.name === userCountry">{{country.name}}</option>
+    </select>
+    <input *ngIf="country.value" class="chat-phone" type="text" name="phone" placeholder="Enter the phone number to text" [formControl]="phone" (focus)="tryPastingNumber()">
+    <textarea class="prefill-area" type="text" name="prefilledText" [(ngModel)] = "prefilledText">
+    </textarea>
+    <button [disabled]="cantStartChat()" class="chat-button" type="button" (click)="startChat()">
+      <img *ngIf="cantStartChat()" class="whatsapp-img" alt="Chat on WhatsApp" src="/assets/img/ChatOnWhatsAppButton/WhiteTheme/WhatsAppButtonWhiteSmall.png" />
+      <img *ngIf="!cantStartChat()" class="whatsapp-img" alt="Chat on WhatsApp" src="/assets/img/ChatOnWhatsAppButton/WhatsAppButtonGreenSmall.png" />
+    </button>
+    <router-outlet></router-outlet>
+</div>

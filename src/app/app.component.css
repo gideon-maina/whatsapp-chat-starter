@@ -1,0 +1,91 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    font-family: Segoe UI,Helvetica Neue,Helvetica,Lucida Grande,Arial,Ubuntu,Cantarell,Fira Sans,sans-serif;
+    background-color: #128C7E;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.header {
+    color: #3b4a54;
+    text-align: center;
+    margin-left: 20px;
+    font-size: 42px;
+    margin-bottom: 0px;
+}
+
+.info {
+    margin-top: 0px;
+    font-size: 10px;
+    font-style: italic;
+}
+
+.country-select {
+    margin-left: 20px;
+    font-size: 12px;
+    height: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid #4CAF50;
+    margin-bottom: 2px;
+}
+
+.chat-phone {
+    margin-left: 20px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    text-align: center;
+    border: 2px solid #4CAF50;
+    border-radius: 4px;
+    font-size: 12px;
+    height: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.chat-button {
+    margin-left: 20px;
+    font-size: 12px;
+    height: 30px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    border: 1px solid #4CAF50;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 4px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.chat-button:disabled {
+    cursor: not-allowed;
+    background-color: grey;
+    border-radius: 6px;
+    border: 1px solid #4CAF50;
+}
+
+.whatsapp-img {
+    height: 100%;
+}
+
+.prefill-area {
+    margin-left: 20px;
+    border-radius: 6px;   
+    margin-bottom: 20px;
+    height: 60px;
+    border: 1px solid #4CAF50;
+}
+
+.prefilled-p {
+    font-size: 9px;
+    margin-left: 20px;
+    color: white;
+}
