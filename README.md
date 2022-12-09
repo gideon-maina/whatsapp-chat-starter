@@ -1,3 +1,6 @@
+# whatsapp-chat-starter
+Start whatsapp chats with a number not in your contacts
+
 # WhatsappStarter
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
